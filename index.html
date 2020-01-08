@@ -16,35 +16,36 @@
 <body>
     
     <!-- MENU -->
-    <nav class="navbar navbar-expand-lg navbar-light menu">
-        <input type="checkbox" value="" id="menucheck">
-        <a href="#">
-            <img src="./assets/logo.svg" class="totalImage" alt="Menu logo">
-        </a>
-        
-        <label for="menucheck" class="navbar-toggler">
-            <span class="navbar-toggler-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><path stroke="#060A24" stroke-width="2" stroke-linecap="straight" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>
-            </span>
-            <i class="fa fa-times" aria-hidden="true"></i>
-        </label>
-        <ul class="navbar-nav ">
-            <li class="nav-item animated fadeInUp">
-                <a class="nav-link" href="#Episodes">EPISODIOS</a>
-            </li>
-            <li class="nav-item animated fadeInUp">
-                <a class="nav-link" href="#Ours">NOSOTROS</a>
-            </li>
-            <li class="nav-item animated fadeInUp">
-                <a class="nav-link" href="#Interviews">ENTREVISTAS</a>
-            </li>
-            <li class="nav-item animated fadeInUp">
-                <a class="nav-link" href="#Topics">TÓPICOS</a>
-            </li>
-        </ul>
-    </nav>
-    
-    <div class="container">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light menu">
+            <input type="checkbox" value="" id="menucheck">
+            <a href="#">
+                <img src="./images/logo.svg" class="totalImage" alt="Menu logo">
+            </a>
+            
+            <label for="menucheck" class="navbar-toggler">
+                <span class="navbar-toggler-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><path stroke="#060A24" stroke-width="2" stroke-linecap="straight" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>
+                </span>
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </label>
+            <ul class="navbar-nav ">
+                <li class="nav-item animated fadeInUp">
+                    <a class="nav-link" href="#Episodes">EPISODIOS</a>
+                </li>
+                <li class="nav-item animated fadeInUp">
+                    <a class="nav-link" href="#Ours">NOSOTROS</a>
+                </li>
+                <li class="nav-item animated fadeInUp">
+                    <a class="nav-link" href="#Interviews">ENTREVISTAS</a>
+                </li>
+                <li class="nav-item animated fadeInUp">
+                    <a class="nav-link" href="#Topics">TÓPICOS</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container">
         <!-- HEADER -->
         <div class="row animated fadeInLeft">
             <div class="column section1 pl1440 mTitle-1440">
@@ -64,8 +65,9 @@
         </div>
         <!-- EPISODIOS -->
         <!-- EL PADDING DE CADA IFRAME ES DE 0.61rem y no de 0.68rem=10.88px=3.4% ya que sino no queda como en la imagen -->
+        <!-- Pagina para los iframes https://developer.spotify.com/documentation/widgets/generate/play-button/ -->
         <div class="row animated fadeInUp">
-            <div class="paddingcero section2">
+            <div class="paddingcero section">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" class="svg1">
                     <polygon fill="white" points="0,0 100,0 0,100"/>
                 </svg>
@@ -103,10 +105,11 @@
         <!-- INFO DE DONDE VENIMOS -->
         <div class="row">
             <div class="column12 column-6 text-center pl1440">
-                <img id="Ours" class="phoneImage" src="./assets/phone.png" alt="Foto mujer conectando lineas telefonicas">
+                <span id="Ours"></span>
+                <img class="phoneImage" src="./images/phone.png" alt="Foto mujer conectando lineas telefonicas">
             </div>
             <div class="column12 column-6 title pr1440">
-                De dónde venimos <!--title3 subtitle3-->
+                De dónde venimos
                 <p class="subtitle">Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. 
                     <br><br> Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
                 </p>
@@ -114,66 +117,69 @@
         </div>
         <!-- INVITADOS ESTELARES -->
         <div class="row paddingtop mb-14 mb-3">
-            <div class="column title pl1440" id="Interviews">
+            <div class="column title pl1440">
+                <span id="Interviews"></span>
                 Invitadas/os Estelares
-            </div> <!--  title2 -->
+            </div> 
         </div>
         <div class="row">
             <div class="column-4 column-6 paddingcero">
-                <img src="./assets/grace-hopper.png" alt="foto1" class="totalImage">
+                <img src="./images/grace-hopper.png" alt="foto1" class="totalImage">
             </div>
             <div class="column-4 column-6 paddingcero">
-                <img src="./assets/Katie-Bouman.png" alt="foto2" class="totalImage">
+                <img src="./images/Katie-Bouman.png" alt="foto2" class="totalImage">
             </div>
             <div class="column-4 column-6 paddingcero">
-                <img src="./assets/Margaret_Hamilton.png" alt="foto3" class="totalImage">
+                <img src="./images/Margaret_Hamilton.png" alt="foto3" class="totalImage">
             </div>
-        
+            
             <div class="column-4 column-6 paddingcero">
-                <img src="./assets/An%20E.R.A.Univac%201103%20computer%20in%20the%201950s.png" alt="foto4" class="totalImage">
-            </div>
-            <div class="column-4 column-6 paddingcero">
-                <img src="./assets/Computer%20operators%20with%20an%20Eniac%20—%20the%20world’s%20first%20programmable%20general-purpose%20computer.png" alt="foto5" class="totalImage">
+                <img src="./images/An%20E.R.A.Univac%201103%20computer%20in%20the%201950s.png" alt="foto4" class="totalImage">
             </div>
             <div class="column-4 column-6 paddingcero">
-                <img src="./assets/susan-kare.png" alt="foto6" class="totalImage">
+                <img src="./images/Computer%20operators%20with%20an%20Eniac%20—%20the%20world’s%20first%20programmable%20general-purpose%20computer.png" alt="foto5" class="totalImage">
+            </div>
+            <div class="column-4 column-6 paddingcero">
+                <img src="./images/susan-kare.png" alt="foto6" class="totalImage">
             </div>
         </div>
         
         
         <!-- ALGUNNOS DE NUESTROS TEMAS -->
         <div class="row paddingtop">
-            <div class="column title pl1440" id="Topics">Algunos de nuestros temas</div>
+            <div class="column title pl1440">
+                <span id="Topics"></span>
+                Algunos de nuestros temas</div>
         </div>
         <div class="row paddingtop pl1440 pr1440">
             <div class="column-6 column-3 text-center">
-                <img src="./assets/icon1.svg" alt="trabajo remoto">
+                <img src="./images/icon1.svg" alt="trabajo remoto">
                 <div><p class="p1">Trabajo remoto</p></div> 
             </div>
             <div class="column-6 column-3 text-center">
-                <img src="./assets/icon2.svg" alt="Repensando la programación">
+                <img src="./images/icon2.svg" alt="Repensando la programación">
                 <div><p class="p1">Repensando la programación</p></div> 
             </div>
             <div class="column-6 column-3 text-center">
-                <img src="./assets/icon3.svg" alt="Bases de código">
+                <img src="./images/icon3.svg" alt="Bases de código">
                 <div><p class="p1">Bases de código</p></div> 
             </div>
             <div class="column-6 column-3 text-center">
-                <img src="./assets/icon4.svg" alt="Seguridad informática">
+                <img src="./images/icon4.svg" alt="Seguridad informática">
                 <div><p class="p1">Seguridad informática</p></div> 
             </div>
         </div>
         
         <!-- ULTIMAS NOVEDADES -->
         <div class="row">
-            <div class="section2 height1">
+            <div class="section height1">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" class="svg1">
                     <polygon fill="white" points="0,0 100,0 0,100"/>
                 </svg>
                 <div class="column mb-3">
                     <div class="row">
                         <div class="column text-center">
-                            <div class="title whiteTitle "> ¿Querés las últimas novedades?</div>
+                            <div class="title whiteTitle ">¿Querés las últimas novedades?</div>
                             <div class="btnTitle">
                                 <a href="#"><span class="btninside"></span>ESCUCHÁ LOS EPISODIOS</a>
                             </div> 
@@ -188,7 +194,6 @@
         <div class="row">
             <div class="column subtitle footer">
                 <div class="pale"> © 2019— Hello blue pale dot </div>
-                <!-- <div class="column-5 bigcolumn-6"></div> -->
                 <div class="icons">
                     <a href="#"><i class="fa fa-spotify" aria-hidden="true"></i></a>
                     <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
@@ -199,7 +204,7 @@
             </div>
         </div>
         
-    </div>
+    </section>
     
 </body>
 </html>
