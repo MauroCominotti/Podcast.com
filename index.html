@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +8,10 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600&display=swap" rel="stylesheet">
-    <!-- MyCss -->
-    <link rel="stylesheet" href="styles/styles.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- MyCss -->
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     
@@ -45,51 +45,52 @@
             </ul>
         </nav>
     </header>
-    <section class="container">
+    <div class="container">
         <!-- HEADER -->
-        <div class="row animated fadeInLeft">
+        <section class="row animated fadeInLeft">
             <div class="column section1 pl1440 mTitle-1440">
-                <span class="title principalTitle">
+                <h1 class="title principal-title">
                     Hello <span>world</span>
-                </span>
-                <span class="title principalTitle">pale blue dot <span class="point">.</span></span> 
+                </h1>
+                <h1 class="title principal-title">pale blue dot <span class="point">.</span></h1> 
                 
-                <p class="subtitle smallDevice">Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>
-                <p class="subtitle bigDevice">El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
+                <p class="subtitle small-device">Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>
+                <p class="subtitle big-device">El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
                 
-                <div class="btnTitle">
-                    <a href="#"><span class="btninside"></span>CONOCÉ MÁS</a>
+                <div class="btn-title">
+                    <a href="#"><span class="btn-inside"></span>CONOCÉ MÁS</a>
                 </div> 
             </div>
             
-        </div>
+        </section>
         <!-- EPISODIOS -->
         <!-- EL PADDING DE CADA IFRAME ES DE 0.61rem y no de 0.68rem=10.88px=3.4% ya que sino no queda como en la imagen -->
         <!-- Pagina para los iframes https://developer.spotify.com/documentation/widgets/generate/play-button/ -->
-        <div class="row animated fadeInUp">
-            <div class="paddingcero section">
+        <section class="row animated fadeInUp">
+            <span  id="Episodes"></span>
+            <div class="padding-cero section">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" class="svg1">
                     <polygon fill="white" points="0,0 100,0 0,100"/>
                 </svg>
                 
-                <div class="fullwidth marginTop1440 pl1440">
-                    <div class=" column title whiteTitle"><span  id="Episodes"></span> Episodios</div>
+                <div class="full-width marginTop1440 pl1440">
+                    <h2 class="column title white-title">Episodios</h2>
                 </div>
-                <div class="fullwidth mb-12">
+                <div class="full-width mb-12">
                     <div class="column">
-                        <div class="row  margin-Episodes">
-                            <div class="column-6 paddingIframe">
+                        <div class="row  margin-episodes">
+                            <div class="column-6 padding-iframe">
                                 <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                             </div>
-                            <div class="column-6 paddingIframe">
+                            <div class="column-6 padding-iframe">
                                 <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                             </div>
                         </div>
-                        <div class="row  margin-Episodes">
-                            <div class="column-6 paddingIframe">
+                        <div class="row  margin-episodes">
+                            <div class="column-6 padding-iframe">
                                 <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                             </div>
-                            <div class="column-6 paddingIframe">
+                            <div class="column-6 padding-iframe">
                                 <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                             </div>
                         </div>
@@ -100,58 +101,63 @@
                     <polygon fill="white" points="0,100 100,0 100,100"/>
                 </svg>  
             </div>
-        </div>
+        </section>
         
         <!-- INFO DE DONDE VENIMOS -->
-        <div class="row">
+        <section class="row">
+            <span id="Ours"></span>
             <div class="column12 column-6 text-center pl1440">
-                <span id="Ours"></span>
-                <img class="phoneImage" src="./images/phone.png" alt="Foto mujer conectando lineas telefonicas">
+                <img class="phone-image" src="./images/phone.png" alt="Foto mujer conectando lineas telefonicas">
             </div>
-            <div class="column12 column-6 title pr1440">
-                De dónde venimos
-                <p class="subtitle">Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. 
-                    <br><br> Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
+            <div class="column12 column-6 pr1440">
+                <h2 class="title"> De dónde venimos </h2>
+                <p class="subtitle">Our posturings, our imagined self-importance, the delusion that we have some privileged position in
+                    the Universe, are challenged by this point of pale
+                    light. 
+                </p>
+                <p class="subtitle"> Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this
+                    vastness, there is no hint that help will come from elsewhere to save us from ourselves.
                 </p>
             </div>
-        </div>
+        </section>
         <!-- INVITADOS ESTELARES -->
-        <div class="row paddingtop mb-14 mb-3">
-            <div class="column title pl1440">
-                <span id="Interviews"></span>
+        <section class="row padding-top mb-3">
+            <span id="Interviews"></span>
+            <h2 class="column title pl1440">
                 Invitadas/os Estelares
-            </div> 
-        </div>
-        <div class="row">
-            <div class="column-4 column-6 paddingcero">
+            </h2> 
+        </section>
+        <section class="row">
+            <div class="column-4 column-6 padding-cero">
                 <img src="./images/grace-hopper.png" alt="Grace Hooper" class="totalImage">
             </div>
-            <div class="column-4 column-6 paddingcero">
-                <img src="./images/Katie-Bouman.png" alt="Katie-Bouman" class="totalImage">
+            <div class="column-4 column-6 padding-cero">
+                <img src="./images/katie-bouman.png" alt="Katie Bouman" class="totalImage">
             </div>
-            <div class="column-4 column-6 paddingcero">
-                <img src="./images/Margaret_Hamilton.png" alt="Margaret_Hamilton" class="totalImage">
+            <div class="column-4 column-6 padding-cero">
+                <img src="./images/margaret-hamilton.png" alt="Margaret Hamilton" class="totalImage">
             </div>
             
-            <div class="column-4 column-6 paddingcero">
-                <img src="./images/An%20E.R.A.Univac%201103%20computer%20in%20the%201950s.png" alt="Una computadora E.R.A.Univac 1103 en los 1950s" class="totalImage">
+            <div class="column-4 column-6 padding-cero">
+                <img src="./images/era-univac-1103-1950s.png" alt="Una computadora E.R.A. Univac 1103 en los 1950s" class="totalImage">
             </div>
-            <div class="column-4 column-6 paddingcero">
-                <img src="./images/Computeroperators.png" alt="Operadores de computadoras con un Eniac — la primer computadora de proposito programable en el mundo" class="totalImage">
+            <div class="column-4 column-6 padding-cero">
+                <img src="./images/computer-operators.png" alt="Operadores de computadoras con un Eniac: la primer computadora de proposito programable en el mundo" class="totalImage">
             </div>
-            <div class="column-4 column-6 paddingcero">
-                <img src="./images/susan-kare.png" alt="susan-kare" class="totalImage">
+            <div class="column-4 column-6 padding-cero">
+                <img src="./images/susan-kare.png" alt="Susan Kare" class="totalImage">
             </div>
-        </div>
+        </section>
         
         
         <!-- ALGUNNOS DE NUESTROS TEMAS -->
-        <div class="row paddingtop">
-            <div class="column title pl1440">
-                <span id="Topics"></span>
-                Algunos de nuestros temas</div>
-        </div>
-        <div class="row paddingtop pl1440 pr1440">
+        <section class="row padding-top">
+            <span id="Topics"></span>
+            <h2 class="column title pl1440">
+                Algunos de nuestros temas
+            </h2>
+        </section>
+        <section class="row padding-top pl1440 pr1440">
             <div class="column-6 column-3 text-center">
                 <img src="./images/icon1.svg" alt="Icono Trabajo remoto">
                 <div><p class="p1">Trabajo remoto</p></div> 
@@ -168,10 +174,10 @@
                 <img src="./images/icon4.svg" alt="Icono Seguridad informática">
                 <div><p class="p1">Seguridad informática</p></div> 
             </div>
-        </div>
+        </section>
         
         <!-- ULTIMAS NOVEDADES -->
-        <div class="row">
+        <section class="row">
             <div class="section height1">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" class="svg1">
                     <polygon fill="white" points="0,0 100,0 0,100"/>
@@ -179,19 +185,19 @@
                 <div class="column mb-3">
                     <div class="row">
                         <div class="column text-center">
-                            <div class="title whiteTitle ">¿Querés las últimas novedades?</div>
-                            <div class="btnTitle">
-                                <a href="#"><span class="btninside"></span>ESCUCHÁ LOS EPISODIOS</a>
+                            <h2 class="title white-title ">¿Querés las últimas novedades?</h2>
+                            <div class="btn-title">
+                                <a href="#"><span class="btn-inside"></span>ESCUCHÁ LOS EPISODIOS</a>
                             </div> 
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         
         
         <!-- FOOTER -->
-        <div class="row">
+        <footer class="row">
             <div class="column subtitle footer">
                 <div class="pale"> © 2019— Hello blue pale dot </div>
                 <div class="icons">
@@ -202,9 +208,9 @@
                     <a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a>
                 </div>
             </div>
-        </div>
+        </footer>
         
-    </section>
+    </div>
     
 </body>
 </html>
